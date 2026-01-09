@@ -1,0 +1,193 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+   background: linear-gradient(135deg, #0f1419 0%, #1a2a4e 50%, #2d1b4e 100%);
+   color: #fff;
+}
+
+nav {
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+ul {
+   list-style: none;
+   display: flex;
+   background: linear-gradient(90deg, #1a1f2e 0%, #2a3a5e 100%);
+   padding: 0 32px;
+   box-shadow: 0 4px 15px rgba(74, 158, 255, 0.2);
+}
+
+ul li a {
+   display: block;
+   color: #e0e0e0;
+   padding: 16px 24px;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   border-bottom: 3px solid transparent;
+}
+
+ul li a:hover {
+   color: #fff;
+   background-color: rgba(255, 255, 255, 0.08);
+   border-bottom-color: #4a9eff;
+}
+
+.header {
+   background: linear-gradient(135deg, rgba(74, 158, 255, 0.08), rgba(0, 212, 255, 0.05)),
+               url(https://vmn-salarisnet.imgix.net/uploads/2024/04/shutterstock-2242235005-3-scaled.jpg?auto=compress%2Cformat&q=50&fit=crop) no-repeat center/cover fixed;
+   height: 600px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.header::before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(15, 20, 25, 0.7) 100%);
+   z-index: 1;
+}
+
+.home {
+   position: relative;
+   z-index: 2;
+   font-size: 56px;
+   line-height: 1.2;
+   font-weight: 700;
+   text-align: center;
+   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   letter-spacing: -0.5px;
+}
+
+.introduction {
+   background: linear-gradient(135deg, #0f1419 0%, #151f35 100%);
+   padding: 48px 32px;
+}
+
+.intro-content {
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+.intro-content h2 {
+   font-size: 40px;
+   margin-bottom: 24px;
+   color: #4a9eff;
+   background: linear-gradient(135deg, #4a9eff, #00d4ff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+
+.intro-content p {
+   font-size: 17.6px;
+   line-height: 1.8;
+   margin-bottom: 24px;
+   color: #d0d0d0;
+   transition: color 0.3s ease;
+}
+
+.intro-content p:hover {
+   color: #fff;
+}
+
+.content {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 48px 32px;
+   color: #d0d0d0;
+}
+
+.content img,
+.content-img {
+   width: 100%;
+   max-width: 600px;
+   height: auto;
+   margin: 24px 0;
+   border-radius: 8px;
+   display: block;
+}
+
+.ai-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0 24px;
+   background: rgba(255,255,255,0.02);
+}
+
+.ai-table th,
+.ai-table td {
+   border: 1px solid rgba(255,255,255,0.06);
+   padding: 9.6px 12px;
+   text-align: left;
+   vertical-align: top;
+
+}
+.ai-table th {
+   background: linear-gradient(90deg, rgba(74,158,255,0.12), rgba(0,212,255,0.06));
+   color: #fff;
+   font-weight: 600;
+}
+
+.content h1 {
+   font-size: 48px;
+   margin-bottom: 32px;
+   color: #4a9eff;
+   background: linear-gradient(135deg, #4a9eff, #00d4ff, #ff006e);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+
+.content h2 {
+   font-size: 28.8px;
+   margin-top: 32px;
+   margin-bottom: 16px;
+   color: #4a9eff;
+   border-bottom: 2px solid transparent;
+   border-image: linear-gradient(90deg, #4a9eff, #00d4ff) 1;
+   padding-bottom: 8px;
+   transition: all 0.3s ease;
+}
+
+.content h2:hover {
+   border-image: linear-gradient(90deg, #00d4ff, #ff006e) 1;
+   color: #00d4ff;
+}
+
+.content p {
+   font-size: 16px;
+   line-height: 1.8;
+   margin-bottom: 24px;
+   text-align: justify;
+   transition: color 0.3s ease;
+}
+
+.content p:hover {
+   color: #fff;
+}
+
+@media (max-width: 768px) {
+   .home {
+       font-size: 40px;
+   }
+  
+   ul {
+       padding: 0 16px;
+   }
+  
+   ul li a {
+       padding: 12px 16px;
+       font-size: 15.2px;
+   }
+}  
